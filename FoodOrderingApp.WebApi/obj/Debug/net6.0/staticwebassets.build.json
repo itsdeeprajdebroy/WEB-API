@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ajXkkUsRxoLZmOsDQfE8rNUX+Su9PqUJfjaVDKG8vYE=",
+  "Source": "FoodOrderingApp.WebApi",
+  "BasePath": "_content/FoodOrderingApp.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
