@@ -51,6 +51,20 @@ namespace FoodOrderingApp.WebApi.Controllers
             }
         }
 
+        //to get all available Users
+        [HttpGet, Route("Users")]
+        public IActionResult Get()
+        {
+            List<User> users = userRepository.GetUsers();
+            if (users != null)
+            {
+                return StatusCode(200, users);
+            }
+            else
+            {
+                return StatusCode(400, "Not Found");
+            }
+        }
         //to update in the db
         [HttpPut, Route("Update")]
         public IActionResult EditUser(User user)

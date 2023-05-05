@@ -56,6 +56,20 @@ namespace FoodOrderingApp.WebApi.Repository
             }
         }
 
+        public List<User> GetUsers()
+        {
+            try
+            {
+                List<User> users = favouriteUserContext.Users.ToList();
+                return users;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
         public void UpdateUser(User user)
         {
             try
